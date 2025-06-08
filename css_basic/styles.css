@@ -1,4 +1,9 @@
 /* Custom styles */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background-color: #f8f9fa;
     padding: 20px;
@@ -15,12 +20,17 @@ header a {
 }
 
 main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
 article {
+    flex: 2;
+    overflow-y: auto;
     margin-bottom: 40px;
 }
 
@@ -61,6 +71,8 @@ footer {
 }
 
 aside {
+    flex: 1;
+    overflow-y: auto;
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 5px;
