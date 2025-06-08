@@ -2,58 +2,89 @@
 body {
     display: flex;
     flex-direction: column;
-}
-
-header {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-bottom: 1px solid #e9ecef;
-}
-
-header ul {
-    display: flex;
-    gap: 20px;
-}
-
-header a {
-    font-weight: bold;
+    background-color: #f5f5f5;
 }
 
 main {
     display: flex;
     flex-direction: row;
     flex: auto;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    gap: 20px;
 }
 
 article {
     flex: 2;
     overflow-y: auto;
-    margin-bottom: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #3498db;
+}
+
+.logo {
+    font-size: 2em;
+    color: #3498db;
 }
 
 h1 {
+    color: #2c3e50;
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #333;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
 }
 
 h2 {
+    color: #2c3e50;
     font-size: 2em;
     margin: 30px 0 15px;
-    color: #444;
 }
 
 h3 {
+    color: #2c3e50;
     font-size: 1.5em;
     margin: 25px 0 10px;
-    color: #555;
 }
 
 p {
     line-height: 1.6;
+    color: #34495e;
     margin-bottom: 15px;
 }
 
@@ -61,20 +92,31 @@ img {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-color: #2c3e50;
+    color: white;
     padding: 20px;
     text-align: center;
-    border-top: 1px solid #e9ecef;
+    margin-top: auto;
 }
 
-aside {
-    flex: 1;
-    overflow-y: auto;
+footer a {
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #2980b9;
+}
+
+blockquote.twitter-tweet {
     background-color: #f8f9fa;
-    padding: 20px;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
     border-radius: 5px;
-    margin-top: 20px;
 } 
