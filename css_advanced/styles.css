@@ -1,0 +1,150 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header styles */
+header {
+    position: absolute;
+    width: 100%;
+    padding: 16px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.smile-icon {
+    height: 30px;
+    width: auto;
+}
+
+.logo-text {
+    height: 30px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(7, 22, 41, 0.8), rgba(7, 22, 41, 0.8)),
+                url('./images/Object.png') center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.hero-content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.hero h1 {
+    font-size: 120px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.hero-words {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.hero-words span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hero button {
+    background-color: #C271FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #B15FE8;
+}
+
+/* Pros section */
+.pros-section {
+    text-align: center;
+    padding: 80px 16px;
+}
+
+.pros-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.pros-grid {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pro-card {
+    text-align: center;
+}
+
+.pro-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.pro-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pro-card p {
+    font-size: 14px;
+    color: #C271FF;
+}
