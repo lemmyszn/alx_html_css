@@ -148,3 +148,254 @@ nav a {
     font-size: 14px;
     color: #C271FF;
 }
+
+/* Quote section */
+.quote {
+    background-color: #C271FF;
+    padding: 100px 0;
+}
+
+.quote-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 16px;
+}
+
+.quote-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote-content {
+    flex: 1;
+    color: #FFFFFF;
+}
+
+.quote-content blockquote {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.4;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.quote-author h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.quote-author p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive design for quote section */
+@media screen and (max-width: 768px) {
+    .quote-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .quote-content blockquote {
+        font-size: 18px;
+    }
+}
+
+/* Videos section */
+.videos {
+    background-color: #F2F2F2;
+    padding: 60px 0;
+}
+
+.videos h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.videos-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.video-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-thumbnail img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 20px 10px;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #666666;
+    margin: 0 20px;
+}
+
+.video-author {
+    display: flex;
+    align-items: center;
+    margin: 15px 20px;
+    gap: 10px;
+}
+
+.video-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.video-author h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #C271FF;
+}
+
+.video-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+}
+
+.video-rating .stars img {
+    width: 90px;
+    height: auto;
+}
+
+.video-rating span {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Responsive design for videos section */
+@media screen and (max-width: 1024px) {
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Membership section */
+.membership {
+    background-color: #071629;
+    padding: 100px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.membership h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.membership-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.membership-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.membership-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.membership-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.membership-item p {
+    font-size: 14px;
+    color: #C271FF;
+}
+
+.membership button {
+    background-color: #C271FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership button:hover {
+    background-color: #B15FE8;
+}
+
+/* Responsive design for membership section */
+@media screen and (max-width: 1024px) {
+    .membership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+}
